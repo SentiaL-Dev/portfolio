@@ -1,0 +1,200 @@
+@media (max-width: 1520px) {
+  .photo_box{
+    right: 10px;
+  }
+}
+@media (max-width: 1380px) {
+  .info_box{
+    padding-left: 150px;
+  }
+  .projects_box h2{
+    padding-left: 110px;
+  }
+}
+@media (max-width: 1180px) {
+  .info_box{
+    padding-left: 30px;
+  }
+  .projects_box h2{
+    padding-left: 0;
+  }
+  .photo_box img{
+    max-height: 1050px;
+  }
+  .projects_box{
+    padding: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .left_menu_box ul{
+    padding-top: 65px;
+  }
+  .photo_box img{
+    max-height: 800px;
+  }
+  .info_box{
+    padding-top: 100px;
+  }
+}
+@media (max-width: 860px) {
+  .info_box{
+    padding-top: 60px;
+    max-width: 100%;
+    h1{
+      font-size: 3.5em;
+      line-height: 1.2em;
+    }
+    h3{
+      font-size: 1.3em;
+      margin-bottom: 20px;
+    }
+  }
+  .photo_box img{
+    max-height: 600px;
+  }
+}
+@media (max-width: 768px) {
+  .prof_box span{
+    text-shadow: 0 0 8px $black;
+  }
+  .photo_box img{
+    max-height: 500px;
+  }
+  h2{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  .skill_box{
+    margin-bottom: 60px;
+  }
+  .adapt_flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .projects{
+    .back_side, .front_side, .project_item{
+      width: 330px;
+      height: 248px;
+    }
+    .back_side span{
+      display: none;
+    }
+  }
+
+}
+@media (max-width: 640px) {
+  .left_menu_box ul{
+    padding-top: 45px;
+  }
+  .info_box{
+    padding-top: 30px;
+    h1{
+      font-size: 2.5em;
+    }
+  }
+  .photo_box{
+    overflow: hidden;
+    top: 40px;
+    right: 40px;
+    width: 150px;
+    height: 150px;
+    border: 4px solid $blue;
+    @include border-radius(50%);
+    img{
+      max-width: 130%;
+      margin-left: -20px;
+      margin-top: -15px;
+    }
+  }
+  .btns_box{
+    text-align: center;
+    margin-bottom: 0;
+    a{
+      margin-right: 0;
+    }
+  }
+  .decor_line{
+    margin-bottom: 20px;
+  }
+  h2{
+    font-size: 1.6em;
+  }
+  .skill_box{
+    margin-bottom: 0;
+  }
+  .projects{
+    .back_side{
+      h4{
+        font-size: 1em;
+        margin-bottom: 10px;
+      }
+    }
+    .project_item{
+      margin: 0 0 20px 0;
+    }
+  }
+}
+@media (max-width: 460px) {
+  .info_box{
+    padding: 180px 10px 10px 10px;
+    h1, h3{
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    h1{
+      font-size: 2em;
+    }
+  }
+  .info_box h1, .prof_box{
+    margin-bottom: 20px;
+    br{
+      display: none;
+    }
+  }
+  .photo_box{
+    top: 20px;
+    left: 50%;
+    right: auto;
+    @include transform(translateX(-50%));
+  }
+  h2{
+    font-size: 1.3em;
+  }
+  .projects_box{
+    padding: 10px 10px 0 10px;
+  }
+  .projects{
+    .back_side,.front_side,.project_item{
+      width: 240px;
+      height: 180px;
+    }
+    .project_item{
+      margin: 0 0 10px 0;
+    }
+    .title{
+      font-size: 1em;
+    }
+  }
+  .skill_box span{
+    font-size: 0.8em;
+    padding: 0 16px;
+    margin: 0 8px 8px 0;
+    height: 26px;
+    line-height: 24px;
+  }
+  .content{
+    padding-left: 48px;
+    border: 4px solid $blue;
+  }
+  .left_menu_box{
+    width: 48px;
+    .open_closer{
+      margin-left: 10px;
+    }
+    ul{
+      margin-left: 13px;
+    }
+  }
+}

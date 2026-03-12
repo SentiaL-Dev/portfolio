@@ -1,0 +1,32 @@
+body{
+  cursor: crosshair;
+}
+.cursor{
+  position: fixed;
+  z-index: 9999;
+  background-color: #517EF0;
+  width: 10px;
+  height: 10px;
+  pointer-events: none;
+  .topLine, .leftLine, .rightLine, .bottomLine{
+    position: absolute;
+    width: 100vw;
+    height: 1px;
+    background-color: $blue;
+    opacity: 0.4;
+  }
+  .topLine{
+    @include transform(rotate(90deg));
+    bottom: 0;
+  }
+  .leftLine{
+    right: 0;
+  }
+  .rightLine{
+    left: 0;
+  }
+  .bottomLine{
+    @include transform(rotate(90deg));
+    top: 0;
+  }
+}

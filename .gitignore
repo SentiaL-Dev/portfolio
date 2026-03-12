@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# IDE
+.idea/
+
+# Build artifacts (optional: uncomment if you don't want to commit compiled assets)
+# css/style.css
+# js/scripts.min.js
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*

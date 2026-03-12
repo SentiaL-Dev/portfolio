@@ -1,0 +1,51 @@
+@mixin gradient($start_color, $finish_color) {
+  -webkit-background: linear-gradient(to bottom, $start_color, $finish_color);
+  -moz-background: linear-gradient(to bottom, $start_color, $finish_color);
+  -ms-background: linear-gradient(to bottom, $start_color, $finish_color);
+  -o-background: linear-gradient(to bottom, $start_color, $finish_color);
+  background: linear-gradient(to bottom, $start_color, $finish_color);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+@mixin clearfix {
+  *zoom: 1;
+  &:after {
+    clear: both;
+  }
+  &:after, &:before {
+    content: " ";
+    display: table;
+  }
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin box-shadow($shadow) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  -ms-box-shadow: $shadow;
+  -o-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+@mixin transition($transit_settings) {
+  -webkit-transition: $transit_settings;
+  -moz-transition: $transit_settings;
+  -ms-transition: $transit_settings;
+  -o-transition: $transit_settings;
+  transition: $transit_settings;
+}
+
+@mixin transform($transform_settings) {
+  -webkit-transform: $transform_settings;
+  -moz-transform: $transform_settings;
+  -ms-transform: $transform_settings;
+  -o-transform: $transform_settings;
+  transform: $transform_settings;
+}
